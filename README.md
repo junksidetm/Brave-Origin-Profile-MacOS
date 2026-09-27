@@ -72,6 +72,18 @@ Want more control than blind one-click execution? Run `profile.sh` with dedicate
 ./scripts/profile.sh [-c <Release|Beta|Nightly|All>] [-f] [-i] [-p <path>] [-r] [--no-backup]
 ```
 
+### Parameter Specification & Script Flags
+```bash
+# Supported Flags & Switches:
+-c, --channel <channel>     # Release, Beta, Nightly, or All (Default: "All")
+-p, --path, --user-data-dir # Custom path to User Data directory or Local State (Default: empty)
+-i, --install               # Download, mount DMG via hdiutil, and install if missing (Default: 0)
+-f, --force                 # Terminate running Brave instances automatically without prompt (Default: 0)
+-r, --restore               # Rollback to original Local State from .bak backup (Default: 0)
+--no-backup                 # Skip writing .bak backup files (Default: 0)
+-h, --help                  # Display help manual and exit
+```
+
 | Flag | Argument | Default | What it does |
 | :--- | :--- | :--- | :--- |
 | **`-c, --channel`** | `Release\|Beta\|Nightly\|All` | `All` | Target specific release channels (`Brave-Origin`, `Brave-Origin-Beta`, `Brave-Origin-Nightly`). Won't create dummy directories for channels not installed. |

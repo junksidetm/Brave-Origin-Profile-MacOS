@@ -46,3 +46,11 @@
 - **Modules & Files Updated**:
   - `scripts/profile.sh` — Refined script headers and documentation to be completely independent, standalone, and self-contained without upstream references.
   - `Version.md` — Appended changelog entry tracking standalone refinement.
+
+### [2026-09-28 03:07:00 IST] - Documentation Parameter Signature Block
+- **Author**: mrdarksidetm
+- **Status**: Completed & Verified (100%)
+- **Target Platform**: macOS (Darwin)
+- **Modules & Files Updated**:
+  - `README.md` — Added explicit parameter specification and CLI flags code block to document argument defaults and supported switches.
+  - `Version.md` — Appended changelog entry.
