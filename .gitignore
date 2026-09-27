@@ -1,0 +1,20 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files & logs
+*.tmp
+*.bak
+*.log
+/tmp/
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*~

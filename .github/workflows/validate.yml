@@ -1,0 +1,24 @@
+name: Validate macOS Script
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  validate-macos-shell:
+    name: Lint & Syntax Check (macOS Shell)
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate macOS Shell Script Syntax
+        run: |
+          echo "Checking syntax for ./scripts/profile.sh..."
+          bash -n ./scripts/profile.sh
+          sh -n ./scripts/profile.sh
+          echo "Shell syntax validation passed!"

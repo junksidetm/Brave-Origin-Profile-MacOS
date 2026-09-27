@@ -1,0 +1,12 @@
+stages:
+  - test
+
+validate-macos-shell:
+  stage: test
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache bash
+  script:
+    - echo "Checking shell syntax for ./scripts/profile.sh..."
+    - bash -n ./scripts/profile.sh
+    - echo "Shell syntax validation passed!"
