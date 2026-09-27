@@ -2,9 +2,8 @@
 # ==============================================================================
 # Brave Origin Profile Configuration Tool for macOS
 #
-# Inspired by: https://github.com/ObjectAscended/brave-origin-unlocker
-# Native macOS implementation: 100% zero external dependencies (no Deno, Node,
-# Python, or Homebrew required). Uses native macOS subsystem utilities:
+# Native macOS automation utility with 100% zero external dependencies (no Deno,
+# Node.js, Python, or Homebrew required). Uses native macOS subsystem utilities:
 #   - /bin/zsh & /bin/sh (POSIX compatibility)
 #   - osascript (JavaScript for Automation / JXA) & plutil for atomic JSON mutation
 #   - hdiutil, ditto, curl for native DMG mounting and application deployment
