@@ -54,3 +54,13 @@
 - **Modules & Files Updated**:
   - `README.md` — Added explicit parameter specification and CLI flags code block to document argument defaults and supported switches.
   - `Version.md` — Appended changelog entry.
+
+### [2026-10-01 21:20:00 IST] - Interactive TTY Handling & README Quick Run Fix
+- **Author**: mrdarksidetm
+- **Status**: Completed & Verified (100%)
+- **Target Platform**: macOS (Darwin)
+- **Target Channels**: Brave-Origin, Brave-Origin-Beta, Brave-Origin-Nightly
+- **Modules & Files Updated**:
+  - `scripts/profile.sh` — Enhanced interactive prompts (`stop_running_brave` and `run_pipeline`) to evaluate `[ -t 0 ]` and read from `/dev/tty` when stdin is piped, preventing premature EOF and ensuring prompts wait for user input even under `curl | bash`.
+  - `README.md` — Updated Quick Run commands to use process substitution (`bash <(curl -fsSL ...)`) to keep standard input directly attached to the terminal.
+  - `Version.md` — Appended changelog entry.

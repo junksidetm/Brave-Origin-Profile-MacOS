@@ -52,12 +52,12 @@ Open any Terminal on macOS (Apple Silicon M1/M2/M3/M4 or Intel) and execute via 
 
 ### 🏔️ Option A: Codeberg (Primary / EU / Forgejo)
 ```bash
-curl -fsSL https://codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS/raw/branch/main/scripts/profile.sh | bash
+bash <(curl -fsSL https://codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS/raw/branch/main/scripts/profile.sh)
 ```
 
 ### 🦊 Option B: GitLab (Mirror)
 ```bash
-curl -fsSL https://gitlab.com/mrdarksidetm/Brave-Origin-Profile-MacOS/-/raw/main/scripts/profile.sh | bash
+bash <(curl -fsSL https://gitlab.com/mrdarksidetm/Brave-Origin-Profile-MacOS/-/raw/main/scripts/profile.sh)
 ```
 
 *Auto-detects installed channels (Release, Beta, Nightly), backs up your config to `.bak`, closes locked browser processes cleanly, and applies the configuration patch. Both mirrors provide identical, signed code.*

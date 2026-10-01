@@ -164,7 +164,13 @@ stop_running_brave() {
         else
             log_warn "Brave Origin is currently running. Modifications while running may be overwritten."
             printf "Would you like to close Brave Origin processes now? [Y/n]: "
-            read -r response
+            if [ -t 0 ]; then
+                read -r response
+            elif [ -r /dev/tty ]; then
+                read -r response < /dev/tty 2>/dev/null || response=""
+            else
+                read -r response 2>/dev/null || response=""
+            fi
             case "$response" in
                 [nN][oO]|[nN])
                     log_warn "Continuing without closing Brave Origin. Changes may require restart."
@@ -451,7 +457,13 @@ run_pipeline() {
             FOUND_COUNT=1
         else
             printf "Would you like to download and install Brave Origin now? [Y/n]: "
-            read -r resp
+            if [ -t 0 ]; then
+                read -r resp
+            elif [ -r /dev/tty ]; then
+                read -r resp < /dev/tty 2>/dev/null || resp=""
+            else
+                read -r resp 2>/dev/null || resp=""
+            fi
             case "$resp" in
                 [nN][oO]|[nN])
                     log_info "Installation skipped. You can initialize configuration manually."
