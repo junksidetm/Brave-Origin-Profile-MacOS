@@ -9,7 +9,8 @@
 **Because a $60 paywall for a stripped-down browser on macOS that is literally free on Linux is absurd.**
 
 <p>
-  <a href="https://codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS"><img src="https://img.shields.io/badge/Codeberg-Repository-2185d0?logo=codeberg&logoColor=white" alt="Codeberg" /></a>
+  <a href="https://github.com/junksidetm/Brave-Origin-Profile-MacOS"><img src="https://img.shields.io/badge/GitHub-Main-181717?logo=github&logoColor=white" alt="GitHub Main" /></a>
+  <a href="https://codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS"><img src="https://img.shields.io/badge/Codeberg-Mirror-2185d0?logo=codeberg&logoColor=white" alt="Codeberg" /></a>
   <a href="https://gitlab.com/mrdarksidetm/Brave-Origin-Profile-MacOS"><img src="https://img.shields.io/badge/GitLab-Mirror-fc6d26?logo=gitlab&logoColor=white" alt="GitLab" /></a>
   <img src="https://img.shields.io/badge/macOS-10.15%20to%2015%2B%20%7C%20Apple%20Silicon%20%26%20Intel-black?logo=apple&logoColor=white" alt="macOS" />
   <img src="https://img.shields.io/badge/Runtime-Zero%20Dependencies%20(Native%20JXA)-success" alt="Zero Dependencies" />
@@ -146,16 +147,20 @@ See [`LEGAL.md`](LEGAL.md) for full statutory analysis.
 
 ---
 
-## 🌐 Dual-Mirror Git Hosts: Codeberg & GitLab
-
+## 🌐 Source Mirrors: GitHub, Codeberg & GitLab
+ 
 This project is hosted symmetrically across independent git forges:
 
 | Provider | Mirror URL | Type |
 | :--- | :--- | :--- |
-| **Codeberg** | [codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS](https://codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS) | Primary (EU / Non-Profit / Forgejo) |
-| **GitLab** | [gitlab.com/mrdarksidetm/Brave-Origin-Profile-MacOS](https://gitlab.com/mrdarksidetm/Brave-Origin-Profile-MacOS) | Mirror (Independent Enterprise) |
+| **GitHub** | [github.com/junksidetm/Brave-Origin-Profile-MacOS](https://github.com/junksidetm/Brave-Origin-Profile-MacOS) | Main Repository |
+| **Codeberg** | [codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS](https://codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS) | Mirror (Forgejo) |
+| **GitLab** | [gitlab.com/mrdarksidetm/Brave-Origin-Profile-MacOS](https://gitlab.com/mrdarksidetm/Brave-Origin-Profile-MacOS) | Mirror (GitLab) |
 
 ```bash
+# Clone from GitHub:
+git clone https://github.com/junksidetm/Brave-Origin-Profile-MacOS.git
+
 # Clone from Codeberg:
 git clone https://codeberg.org/mrdarksidetm/Brave-Origin-Profile-MacOS.git
 

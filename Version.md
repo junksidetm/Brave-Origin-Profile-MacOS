@@ -64,3 +64,10 @@
   - `scripts/profile.sh` — Enhanced interactive prompts (`stop_running_brave` and `run_pipeline`) to evaluate `[ -t 0 ]` and read from `/dev/tty` when stdin is piped, preventing premature EOF and ensuring prompts wait for user input even under `curl | bash`.
   - `README.md` — Updated Quick Run commands to use process substitution (`bash <(curl -fsSL ...)`) to keep standard input directly attached to the terminal.
   - `Version.md` — Appended changelog entry.
+
+## [2026-10-08 18:17:00 IST] - Source Mirrors GitHub Integration
+- **Action**: Added GitHub (Main) badge and updated Source Mirrors section in README.md.
+- **Files Modified**:
+  - `README.md`
+  - `Version.md`
+- **Status**: 100% (Completed & Synced)
