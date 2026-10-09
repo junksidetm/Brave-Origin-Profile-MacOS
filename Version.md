@@ -71,3 +71,10 @@
   - `README.md`
   - `Version.md`
 - **Status**: 100% (Completed & Synced)
+
+## [2026-10-09 19:28:00 IST] - Codeberg Forgejo Actions Integration
+- **Action**: Added Codeberg Actions workflow for automated shell script syntax validation on Codeberg mirror.
+- **Files Added**:
+  - `.forgejo/workflows/validate.yml`
+  - `Version.md`
+- **Status**: 100% (Completed & Synced)

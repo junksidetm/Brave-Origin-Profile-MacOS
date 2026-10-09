@@ -1,0 +1,20 @@
+name: Validate macOS Script
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Shell Script Syntax
+        run: |
+          echo "Checking syntax for ./scripts/profile.sh..."
+          bash -n ./scripts/profile.sh
+          echo "Shell syntax validation passed!"
